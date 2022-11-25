@@ -17,9 +17,14 @@ command on creating NFT:
 
 
 	$ npx hardhat compile
+	
+	if goerli:
 
-
-	$ npx hardhat --network goerli run scripts/deploy.js
+		$ npx hardhat --network goerli run scripts/deploy.js
+	
+	if polygon:
+	
+		$ npx hardhat run scripts/deploy.js --network matic
 
 
 	$ npm install @alch/alchemy-web3
